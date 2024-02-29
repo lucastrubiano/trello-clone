@@ -20,11 +20,13 @@ RUN npx prisma generate
 RUN npx tsc
 
 # Construye tu aplicación Next.js
-# RUN npm run build
+RUN npm run build
 
 # Expone el puerto que Next.js utiliza por defecto (3000)
 EXPOSE 3000
 
 # Comando para ejecutar tu aplicación Next.js
 # CMD ["npm", "run", "dev"]
-CMD ["npx", "next", "dev"]
+# CMD ["npx", "next", "dev"]
+# CMD ["npx", "next", "start"]
+CMD ["npm", "run", "start"]
