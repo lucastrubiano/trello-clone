@@ -16,7 +16,7 @@ export const Navbar = () => {
           </Button>
           <Button size="sm" asChild>
             <Link href="/sign-up">
-              Get Taskify for free
+              Get 3NG Tech - Kanban for free
             </Link>
           </Button>
         </div>

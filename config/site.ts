@@ -1,4 +1,4 @@
 export const siteConfig = {
-  name: "Taskify",
+  name: "3NG Tech - Kanban",
   description: "Collaborate, manage projects, and reach new productivity peaks",
 };

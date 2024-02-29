@@ -13,7 +13,7 @@ export const Logo = () => {
     <Link href="/">
       <div className="hover:opacity-75 transition items-center gap-x-2 hidden md:flex">
         <Image
-          src="/logo.svg"
+          src="/3ng_logo.svg"
           alt="Logo"
           height={30}
           width={30}
@@ -22,7 +22,7 @@ export const Logo = () => {
           "text-lg text-neutral-700 pb-1",
           headingFont.className,
         )}>
-          Taskify
+          3NG Tech - Kanban
         </p>
       </div>
     </Link>
