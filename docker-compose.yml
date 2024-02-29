@@ -1,0 +1,26 @@
+# Docker Compose for host TypeScript web app and MySQL database
+version: '3'
+services:
+  typescript:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    hostname: mysqlhost
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 3306:3306
