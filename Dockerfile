@@ -15,6 +15,7 @@ COPY . .
 
 # Genera el cliente de Prisma. Asegúrate de tener tu esquema Prisma listo.
 RUN npx prisma generate
+RUN npx prisma db push
 
 # Build the TypeScript code
 RUN npx tsc
